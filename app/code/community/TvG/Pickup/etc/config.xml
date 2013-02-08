@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<modules>
+    <TvG_Pickup>
+        <version>1.0.0</version>
+    </TvG_Pickup>
+</modules>
+<global>
+    <models>
+        <pickup>
+            <class>TvG_Pickup_Model</class>
+        </pickup>
+    </models>
+    <helpers>
+        <pickup>
+            <class>TvG_Pickup_Helper</class>
+        </pickup>
+    </helpers>
+    <blocks>
+        <pickup>
+            <class>TvG_Pickup_Block</class>
+        </pickup>
+    </blocks>
+</global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <TvG_Pickup>
+                    <files>
+                        <default>TvG_Pickup.csv</default>
+                    </files>
+                </TvG_Pickup>
+            </modules>
+        </translate>
+    </adminhtml>
+<default>
+    <payment>
+        <pickup>
+            <model>pickup/pickup</model>
+            <active>0</active>
+            <order_status>pending</order_status>
+            <title>Pickup</title>
+            <payment_action>sale</payment_action>
+            <allowspecific>0</allowspecific>
+            <sort_order>1</sort_order>
+        </pickup>
+    </payment>
+</default>
+</config>
